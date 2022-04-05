@@ -15,6 +15,10 @@ npm install axios
 
 npm install json-server --save-dev
 
+4. install mathjs
+
+npm install mathjs
+
 How to start the program:
 
 1. Type in the terminal following command:

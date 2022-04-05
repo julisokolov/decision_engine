@@ -48,7 +48,7 @@ const App = () => {
             function (suitable_loan) {
                 //if maximum_sum returns [0,0] it means it couldn't find suitable values or credit_modifier, then the
                 //message is modified
-                const suitable_amount = suitable_loan[0]
+                const suitable_amount = Math.round(suitable_loan[0] * 100) / 100
                 const suitable_period = suitable_loan[1]
                 if (suitable_amount===0&&suitable_period===0) {
                     setMessage('Could not find suitable amount or credit_modifier for this loan. Try changing the values.')
